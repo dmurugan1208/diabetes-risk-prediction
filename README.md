@@ -1,6 +1,6 @@
 # 🩺 diabetes-risk-prediction
 
-## 🎯 Objective
+## Objective
 
 The objective of this project is to develop an **end-to-end data pipeline and predictive analytics system** that identifies diabetes patients at high risk of hospital readmission.  
 By leveraging structured healthcare data, machine learning models, and interactive visualizations, the system aims to:
@@ -11,7 +11,7 @@ By leveraging structured healthcare data, machine learning models, and interacti
 
 ---
 
-## 📦 Phase 1: Data Collection
+## Phase 1: Data Collection
 
 - **Source**: UCI Diabetes 130-US hospitals dataset  
 - **Files Used**: `patients.csv`, `hospital_visits.csv`, `lab_results.csv`, `medications.csv`  
@@ -19,7 +19,7 @@ By leveraging structured healthcare data, machine learning models, and interacti
 
 ---
 
-## 🧹 Phase 2: Data Cleaning & ETL
+## Phase 2: Data Cleaning & ETL
 
 - Performed cleaning to fix column names, remove nulls, and ensure consistency  
 - Maintained **referential integrity**:
@@ -29,7 +29,7 @@ By leveraging structured healthcare data, machine learning models, and interacti
 
 ---
 
-## 🧱 Schema Design Summary
+## Schema Design Summary
 
 - `patients(encounter_id, patient_nbr, race, gender, age)`  
 - `hospital_visits(visit_id, patient_nbr, admission_type, discharge_disposition, admission_source)`  
@@ -38,7 +38,7 @@ By leveraging structured healthcare data, machine learning models, and interacti
 
 ---
 
-## ⚙️ ETL Pipeline Script
+## ETL Pipeline Script
 
 - The Python script `etl_pipeline.py` automates:
   - Reading each CSV from `data/`
@@ -48,7 +48,7 @@ By leveraging structured healthcare data, machine learning models, and interacti
 
 ---
 
-## ✅ Validation Summary
+## Validation Summary
 
 - Ensures:
   - All `patient_nbr` in `hospital_visits` exist in `patients`  
