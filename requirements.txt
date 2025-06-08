@@ -1,4 +1,7 @@
-Python
 pandas
-pymysql
 sqlalchemy
+pymysql
+scikit-learn
+matplotlib
+seaborn
+jupyter
